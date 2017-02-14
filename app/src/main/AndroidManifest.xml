@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.zhangyangzuo.myapplication">
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="this is a test application by zhangyangzuo"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".LogDemo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <!--<data android:scheme="http"/>-->
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".SecondActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <!--<action android:name="com.example.zhangyangzuo.myapplication.ACTION_START"/>-->
+                <category android:name="android.intent.category.DEFAULT"/>
+                <!--<data android:scheme="http"/>-->
+                <!--<category android:name="com.example.zhangyangzuo.myapplication.My_Category"/>-->
+            </intent-filter>
+        </activity>
+        <activity android:name=".ThirdActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.DIAL"/>
+                <!--<category android:name="android.intent.category.DEFAULT"/>-->
+                <action android:name="com.example.zhangyangzuo.myapplication.ACTION_START"/>
+                <data android:scheme="tel"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
