@@ -13,7 +13,7 @@ public class SecondActivity extends AppCompatActivity {
     @Override
     public void onBackPressed(){
         Intent intent =new Intent();
-        intent.putExtra("shit2", "2222222");
+        intent.putExtra("shit2", "22222221");
         setResult(RESULT_OK,intent);
         finish();
     }
@@ -36,7 +36,7 @@ public class SecondActivity extends AppCompatActivity {
 //                intent.setClass(SecondActivity.this,ThirdActivity.class);
 //                startActivity(intent);
                   Intent intent =new Intent();
-                  intent.putExtra("shit2", "2222222");
+                  intent.putExtra("shit2", "22222221");
                   setResult(RESULT_OK,intent);
                   finish();
             }
